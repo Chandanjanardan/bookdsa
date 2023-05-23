@@ -32,7 +32,7 @@ function insert(newElement,item){
 function display(){
     var currNode=this.head
     while(!(currNode.next==null)){
-        console.log(currNode.next.element);
+        
         currNode=currNode.next
     }
 }
@@ -49,6 +49,7 @@ function display(){
 function findPrevious(item){
     var currNode=this.head;
     while((currNode.next!==null &&(currNode.next.element !=item))){
+        
         currNode=currNode.next
     }
     return currNode
