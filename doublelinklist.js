@@ -36,6 +36,7 @@ function find(item){
     while(!(currNode.element==item)){
         currNode=currNode.next
     }
+    console.log(currNode.element)
     return currNode
 }
 

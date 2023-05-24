@@ -10,6 +10,7 @@ function Llist(){
     this.insert=insert
     this.findPrevious=findPrevious
     this.remove=remove
+
     this.display=display
 }
 // find element 
@@ -30,10 +31,15 @@ function insert(newElement,item){
 }
 // display
 function display(){
+    var linklist=""
     var currNode=this.head
     while(!(currNode.next==null)){
-        
+        console.log(currNode.element)
+
         currNode=currNode.next
+        
+        
+
     }
 }
 // output
@@ -60,6 +66,7 @@ function remove(item) {
     prevNode.next = prevNode.next.next;
     }
    }
+
    
 var cities = new Llist();
 cities.insert("Conway", "head");
@@ -69,6 +76,7 @@ cities.insert("Alma", "Carlisle");
 cities.display();
 console.log();
 cities.remove("Carlisle");
+
 cities.display();
 
 
