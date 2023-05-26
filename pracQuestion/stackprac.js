@@ -1,4 +1,4 @@
-// paranthesis checker
+// paranthesis checker llet code 10th question
 function Stack(str){
     const fbrac=[]
     const rbrack=[]
@@ -32,13 +32,17 @@ function Stack(str){
     }else{
         console.log("Not balanced")
     }
-    // console.log(fbrac,fsquare,fcurly,rbrack,rsquare,rcurly)
+    console.log(fbrac,fsquare,fcurly,rbrack,rsquare,rcurly)
     
     
 }
-// Stack("()")
+Stack("hello (()) ths is []")
 // Stack("()[]{}")
 // Stack("{[]}")
 Stack("()]")
+
+
+
+
 
 
