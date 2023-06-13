@@ -40,6 +40,8 @@ function Set() {
   set.add(1);
   set.add(2);
   set.add(3);
+  set.add(4);
+  set.add(5);
   
   console.log(set.values()); // Output: [1, 2, 3]
   console.log(set.size()); // Output: 3
@@ -49,4 +51,6 @@ function Set() {
   set.remove(2);
   console.log(set.values()); // Output: [1, 3]
   console.log(set.size()); // Output: 2
+  console.log(set.size()); // Output: 2
+
   
