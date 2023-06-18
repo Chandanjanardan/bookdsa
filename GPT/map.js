@@ -52,6 +52,7 @@ Map.prototype.clear = function() {
 // Example usage
 var map = new Map();
 map.set("name", "John");
+map.set("college","ait")
 map.set("age", 25);
 map.set("city", "New York");
 
