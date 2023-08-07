@@ -74,7 +74,7 @@
 // key in the map is unique
 
 const map1= new Map();
-map1.set("a",1)
+map1.set(1,"a")
 map1.set("b",1)
 map1.set("c",1)
 
@@ -86,9 +86,28 @@ map1.set("a",97)
 console.log(map1.get("a"))
 
 // size of map 
-console.log(map1.size)
+// console.log(map1.size)
 
 // delete 
 map1.delete("b")
 
-console.log(map1.size)
+// console.log(map1.size)
+
+
+const myMap= new Map();
+const keyString = "a string";
+const keyObj = {}
+const keyFunc = function (){}
+
+// setting the value
+ myMap.set(keyString,"value associated with stting ")
+ myMap.set(keyObj,"value associated with keyObj")
+ myMap.set(keyFunc,"value assosiated with keyFunc")
+
+ console.log(myMap.size)
+
+
+//  getting the value 
+console.log(myMap.get(keyString))
+console.log(myMap.get(keyObj))
+console.log(myMap.get(keyFunc))
