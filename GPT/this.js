@@ -18,9 +18,5 @@ function me(){
 }
 let connect=me.bind(obj)
 connect()
-function me(){
-    console.log(this.name)
-}
-let connect=me.bind(obj)
-connect()
+
 
