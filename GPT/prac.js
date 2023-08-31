@@ -1,10 +1,42 @@
-// map store key and valua pair
-// remember the orignal instertion order
-// used both primetive and objects
+// practice link list a
 
-const map1= new Map();
-map1.set("a",1)
-map1.set("b",1)
-map1.set("c",1)
+// node 
+function Node (value){
+    this.value= value
+    this.next= null
+}
 
-console.log(map.get("a"))
+function LinkList(){
+    this.head= null
+    this.tail= null
+    this.print=print
+}
+LinkList.prototype.append=function(value){
+    let newNode = new Node(value)
+    if(!this.head){
+        this.tail=newNode
+        this.head=newNode
+    }else{
+        newNode.next=this.head
+        this.head=newNode
+    }
+    
+}
+
+const print=function(){
+    let currNode=this.head
+    
+    let value=[]
+    while(currNode !==null){
+        value.push(currNode.value)
+        currNode=currNode.next
+    }
+    console.log(value.join("->"))
+}
+
+const list = new LinkList()
+
+list.append(10)
+list.append(20)
+list.print()
+console.log(typeof(list))

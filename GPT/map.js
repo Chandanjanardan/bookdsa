@@ -73,41 +73,68 @@
 // used both primetive and objects
 // key in the map is unique
 
-const map1= new Map();
-map1.set(1,"a")
-map1.set("b",1)
-map1.set("c",1)
+// const map1= new Map();
+// map1.set(1,"a")
+// map1.set("b",1)
+// map1.set("c",1)
 
-console.log(map1.get("a"))
-
-
-// initilizing a again 
-map1.set("a",97)
-console.log(map1.get("a"))
-
-// size of map 
-// console.log(map1.size)
-
-// delete 
-map1.delete("b")
-
-// console.log(map1.size)
+// console.log(map1.get("a"))
 
 
-const myMap= new Map();
-const keyString = "a string";
-const keyObj = {}
-const keyFunc = function (){}
+// // initilizing a again 
+// map1.set("a",97)
+// console.log(map1.get("a"))
 
-// setting the value
- myMap.set(keyString,"value associated with stting ")
- myMap.set(keyObj,"value associated with keyObj")
- myMap.set(keyFunc,"value assosiated with keyFunc")
+// // size of map 
+// // console.log(map1.size)
 
- console.log(myMap.size)
+// // delete 
+// map1.delete("b")
+
+// // console.log(map1.size)
 
 
-//  getting the value 
-console.log(myMap.get(keyString))
-console.log(myMap.get(keyObj))
-console.log(myMap.get(keyFunc))
+// const myMap= new Map();
+// const keyString = "a string";
+// const keyObj = {}
+// const keyFunc = function (){}
+
+// // setting the value
+//  myMap.set(keyString,"value associated with stting ")
+//  myMap.set(keyObj,"value associated with keyObj")
+//  myMap.set(keyFunc,"value assosiated with keyFunc")
+
+//  console.log(myMap.size)
+
+
+// //  getting the value 
+// console.log(myMap.get(keyString))
+// console.log(myMap.get(keyObj))
+// console.log(myMap.get(keyFunc))
+
+
+
+// -----------------------------------------****-------------------
+const myMap = new Map();
+myMap.set(0,"zero")
+myMap.set(1,"one")
+myMap.set(2,"two")
+
+for (let [key,value] of myMap){
+  console.log(`${key} = ${value}`)
+}
+
+for (let key of myMap.keys()){
+  console.log(key)
+}
+
+for (let value of myMap.values()){
+  console.log(value)
+}
+
+for (let [key,value] of myMap.entries()){
+  console.log(`${key} = ${value}`)
+}
+// relation between array object
+
+
