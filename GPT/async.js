@@ -28,3 +28,4 @@ fetch("https://fakestoreapi.com/products").then((response)=>{})
 .catch((err)=>{
     console.log(err,"some error in data")
 })
+// async
