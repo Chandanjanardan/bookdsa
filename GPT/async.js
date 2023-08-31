@@ -2,8 +2,10 @@
 
 
 const doSomething=()=>{
-    return new Promise((reject,resolve)=>{
+    return new Promise((resolve,reject)=>{
         resolve("promise is resolved")
     })
-    doSomething
 }
+doSomething().then((data)=>{
+    console.log(data)
+})
