@@ -12,4 +12,8 @@ const myReceipt = new Promise((resolve,reject)=>
 // to extract resolve and reject msg we need . then and .catch
 myReceipt.then((resolveVaue)=>{
     console.log(resolveVaue)
+    return "chain"
+})
+.then((chain)=>{
+    console.log(chain)
 })
