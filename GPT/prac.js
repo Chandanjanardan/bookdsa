@@ -1,42 +1,15 @@
-// practice link list a
-
-// node 
-function Node (value){
-    this.value= value
-    this.next= null
-}
-
-function LinkList(){
-    this.head= null
-    this.tail= null
-    this.print=print
-}
-LinkList.prototype.append=function(value){
-    let newNode = new Node(value)
-    if(!this.head){
-        this.tail=newNode
-        this.head=newNode
-    }else{
-        newNode.next=this.head
-        this.head=newNode
-    }
+// Binary search 
+let arr=[3,3,4,5,6,7]
+function search(arr,target){
     
-}
-
-const print=function(){
-    let currNode=this.head
-    
-    let value=[]
-    while(currNode !==null){
-        value.push(currNode.value)
-        currNode=currNode.next
+    let i=0
+    while(arr[i]<arr.length-1){
+        if(target==arr[i]){
+            console.log(i)
+            i++
+            
+        }
     }
-    console.log(value.join("->"))
+    return -1
 }
-
-const list = new LinkList()
-
-list.append(10)
-list.append(20)
-list.print()
-console.log(typeof(list))
+search(arr,4)
