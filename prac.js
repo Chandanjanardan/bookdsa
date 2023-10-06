@@ -1,33 +1,24 @@
-function maxSum(arr,k){
-    if(k>arr.length){
-        return `Size exceed`
-    }
+const people = [
+    { name: "Alice", age: 25 },
+    { name: "Bob", age: 30 },
+    { name: "Charlie", age: 22 },
+    { name: "David", age: 35 },
+    { name: "Eve", age: 28 }
+  ];
 
-    // make window
-    let currentValue=0
-    let maxValue=0
+  function bubbleSort(arr){
+    let swapped
+    do{
+        swapped=false
+        for (let i=0;i<arr.length-1;i++){
+            if(arr[i].age>arr[i+1].age){
+            let temp=arr[i].age
+            arr[i].age=arr[i+1].age
+            arr[i+1].age=temp
+            swapped=true
+        }}
+    }while(swapped)
+    arr.map(e=>console.log(e.name))
 
-    for (let i=0;i<k;i++){
-        currentValue+=arr[i]
-    }
-    maxValue=currentValue
-    // slide 
-    for (i=k;i<arr.length;i++){
-        currentValue-=arr[i-k]
-        currentValue+=arr[i]
-    //    maxValue=Math.max(currentValue,maxValue)
-    if(currentValue>maxValue){
-        maxValue=currentValue
-    }
-    }
-    return maxValue
-}
-
-
-
-
-let arr=[9,9,9,1,1,2,4,3]
-let k=3
-
-const result=maxSum(arr,k)
-console.log(result)
+  }
+bubbleSort(people)
