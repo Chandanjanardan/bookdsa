@@ -1,24 +1,22 @@
-const people = [
-    { name: "Alice", age: 25 },
-    { name: "Bob", age: 30 },
-    { name: "Charlie", age: 22 },
-    { name: "David", age: 35 },
-    { name: "Eve", age: 28 }
-  ];
-
-  function bubbleSort(arr){
-    let swapped
-    do{
-        swapped=false
-        for (let i=0;i<arr.length-1;i++){
-            if(arr[i].age>arr[i+1].age){
-            let temp=arr[i].age
-            arr[i].age=arr[i+1].age
-            arr[i+1].age=temp
-            swapped=true
-        }}
-    }while(swapped)
-    arr.map(e=>console.log(e.name))
-
+function quickSort(arr){
+  if(arr.length<2){
+    return arr
   }
-bubbleSort(people)
+  let left=[]
+  let right=[]
+  let pivot=arr[arr.length-1]
+  for(i=0;i<arr.length-1;i++){
+    if(arr[i]<pivot){
+      left.push(arr[i])
+    }else{
+      right.push(arr[i])
+    }
+  }
+  left=quickSort(left)
+  right=quickSort(right)
+  return [...left,pivot,...right]
+  
+}
+const arr=[4,2,5,1,9,8]
+const result=quickSort(arr)
+console.log(result)
