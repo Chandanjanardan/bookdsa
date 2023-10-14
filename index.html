@@ -1,24 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <body>
- 
-</script>
-<script type="text/javascript" src="https://otpless.com/auth.js"></script>
-<!-- Get user's whatsapp number and name -->
-<script type="text/javascript">
-  function otpless(otplessUser) {
-   console.log(JSON.stringify(otplessUser));
+  <ul id="lists">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+  </ul>
+  <script>
+    let item=document.getElementById("lists")
+    function changeColor(){
+    for(i=0;i<item.children.length;i+=2){
+      
+      item.children[i].style.color="red"
+      item.children[i].classList="list-item"
+    }
   }
-</script>
-    
-    <script src="array.js"></script>
-    <script src="./linklist.js"></script> 
-    <!-- <script src="prac.js"></script> -->
+  changeColor()
+  let li=document.createElement("li")
+  li.innerHTML="6"
+  item.append(li)
+  </script>
 </body>
 </html>

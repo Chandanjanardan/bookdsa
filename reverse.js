@@ -5,7 +5,9 @@ let left=0
 let right=arr.length-1
 
 function reverse(arr){
-  while(left<=right){
+  // while(left<=right)
+  for (let i=0;i<(Math.floor(arr.length/2));i++)
+  {
     let temp=arr[left]
     arr[left]=arr[right]
     arr[right]=temp
