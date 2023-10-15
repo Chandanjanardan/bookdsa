@@ -26,7 +26,7 @@ BinarySearchTree.prototype.insert = function(value) {
   }
 };
 
-// Helper function to recursively insert a node into the BST
+// Helper function tnsoo recursively insert a node into the BST
 function insertNode(node, newNode) {
   if (newNode.value < node.value) {
     if (node.left === null) {
