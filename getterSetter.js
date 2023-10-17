@@ -34,5 +34,5 @@ let obj={
 }
 // I want to chagange greet method
 // If i have to change the value from out side we can pass it through setter
-obj.greet
+obj.greet='Kittu'
 
