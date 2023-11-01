@@ -8,6 +8,7 @@
 // Example 3:
 
 // Input: nums = [1,3,5,6], target = 7
+
 // Output: 4
 function search(arr,target){
     let i=0
