@@ -7,15 +7,20 @@
   <title>Document</title>
 </head>
 <body>
-  <ul id="lists">
-    <li>1</li>
-    <li>2</li>
-    <li>3</li>
-    <li>4</li>
-    <li>5</li>
-  </ul>
-  <script src="./prac.js">
-   
+
+  <a href="/home.html">click for home</a>
+ 
+<script src="https://otpless.com/auth.js"></script> 
+<script> 
+function otpless(otplessUser){ 
+  console.log(JSON.stringify(otplessUser.email.name));
+  let data=otplessUser.email.name
+  data=JSON.stringify(data)
+  console.log(data,"this is name ddata")
+  localStorage.setItem('userName', data);
+  window.location.href="http://127.0.0.1:5500/home.html"
+}
+</script>
 
   </script>
 </body>

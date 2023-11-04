@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is home</h1>
+    <h2 id="username">no user</h2>
+    <a href="./index.html">Click for indeex</a>
+    <script>
+       let data= localStorage.getItem('userName');
+       data=JSON.parse(data)
+       console.log(data,"this is after local storeage")
+      let username=document.getElementById("username")
+      username.innerHTML=data
+    </script>
+</body>
+</html>

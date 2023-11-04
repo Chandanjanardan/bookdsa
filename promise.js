@@ -1,19 +1,10 @@
-// promise have 3 state
-// pending fullfilled and reject
-
-const myReceipt = new Promise((resolve,reject)=>
-{
+let promise = new Promise((resolve,reject)=>{
     setTimeout(()=>{
-        console.log("Here is your icecreame")
-        resolve("here is your ice creame resolved")
+        resolve("I am resolved")
+    },2000)
+    setTimeout(()=>{
+        reject("I am rejected")
     },2000)
 })
-// console.log(myReceipt)
-// to extract resolve and reject msg we need . then and .catch
-myReceipt.then((resolveVaue)=>{
-    console.log(resolveVaue)
-    return "chain"
-})
-.then((chain)=>{
-    console.log(chain)
-})
+promise.then((msg)=>console.log(msg))
+.catch((err)=>console.log(err))
